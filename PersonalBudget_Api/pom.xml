@@ -12,7 +12,7 @@
 	<artifactId>PersonalBudget_Api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PersonalBudget_Api</name>
-	<description>Componente que permite exponer los diferentes mecanismos de acceso a la aplicación Personal Budget</description>
+	<description>Componente que permite exponer los diferentes mecanismos de acceso a la aplicacion Personal Budget</description>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
@@ -27,18 +27,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.mipresupuesto.personalbudget</groupId>
+			<artifactId>PersonalBudget_Crosscutting</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 		<dependency>
-	  	  	  <groupId>com.mipresupuesto.personalbudget</groupId>
-			  <artifactId>PersonalBudgetApplication</artifactId>
-			  <version>0.0.1-SNAPSHOT</version>
-  		</dependency>
-  		
-  		<dependency>
-	  	  	    <groupId>com.mipresupuesto.personalbudget</groupId>
-				<artifactId>PersonalBudgetCrosscutting</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-  		</dependency>
+			<groupId>com.mipresupuesto.personalbudget</groupId>
+  			<artifactId>PersonalBudget_Application</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+			<dependency>
+				<groupId>com.mipresupuesto.personalbudget</groupId>
+  				<artifactId>PersonalBudget_Dto</artifactId>
+  				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 	</dependencies>
 
 	<build>
@@ -49,4 +53,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
